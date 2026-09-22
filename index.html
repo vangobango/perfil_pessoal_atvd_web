@@ -6,18 +6,28 @@
     <title>Samuel Martins</title>
     <meta name="description" content="Portfólio pessoal de Samuel Martins, programador freelancer especializando-se em DevSecOps, entre em contato.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .bloco {
+                @apply bg-emerald-700 rounded-xl shadow p-6 transition hover:shadow-lg;
+            }
+            .lista {
+                @apply bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm;
+            }
+        }
+    </style>
 </head>
 <body class="bg-stone-700 min-h-screen">
     
     <header class="bg-stone-200 rounded-xl border border-gray-400/80 shadow-xs hover:shadow-lg transition-all duration-500 p-6 mb-6">
         <div class="container-header max-w-4xl mx-auto flex items-center justify-between flex-wrap gap-4">
             <h1 class="font-bold text-lg text-emerald-700">Samuel Martins</h1>
-            <nav class="flex gap-4">
-                <ul>
-                    <li class="inline-block mr-4"><a href="#sobre" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Sobre</a></li>
-                    <li class="inline-block mr-4"><a href="#habilidades" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Habilidades</a></li>
-                    <li class="inline-block mr-4"><a href="#projetos" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Projetos</a></li>
-                    <li class="inline-block"><a href="#contato" class="text-neutral-700 hover:text-blue-700 font-medium">Contato</a></li>
+            <nav>
+                <ul class="flex flex-wrap gap-4">
+                    <li><a href="#sobre" class="text-neutral-700 hover:text-blue-700 font-medium">Sobre</a></li>
+                    <li><a href="#habilidades" class="text-neutral-700 hover:text-blue-700 font-medium">Habilidades</a></li>
+                    <li><a href="#projetos" class="text-neutral-700 hover:text-blue-700 font-medium">Projetos</a></li>
+                    <li><a href="#contato" class="text-neutral-700 hover:text-blue-700 font-medium">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,11 +47,11 @@
             <div class="container-habilidades">
                 <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Minhas Habilidades</h2>
                 <ul class="flex flex-wrap gap-2">
-                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm">Base forte em HTML5</li>
-                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm">Tailwind CSS avançado</li>
-                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm">Amplo domínio em Python</li>
-                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm">Tomada de decisão assertiva</li>
-                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm">Resolução colaborativa de conflitos</li>
+                    <li class="lista">Base forte em HTML5</li>
+                    <li class="lista">Tailwind CSS avançado</li>
+                    <li class="lista">Amplo domínio em Python</li>
+                    <li class="lista">Tomada de decisão assertiva</li>
+                    <li class="lista">Resolução colaborativa de conflitos</li>
                 </ul>
             </div>
         </section>
@@ -49,15 +59,15 @@
         <section id="projetos" class="max-w-4xl mx-auto px-6 py-16">
             <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Projetos Pessoais</h2>
             <div class="container-projetos grid grid-cols-1 md:grid-cols-3 gap-6">
-                <article class="bg-emerald-700 rounded-xl shadow p-6">
+                <article class="bloco">
                     <h3 class="text-xl font-semibold text-stone-200 mb-2">1º Projeto: Página Web Orquestrada com Docker</h3>
                     <p class="text-stone-200">Uma demonstração de conhecimento sobre criação de back-end com base em Django e conteinerização via Docker.</p>
                 </article>
-                <article class="bg-emerald-700 rounded-xl shadow p-6">
+                <article class="bloco">
                     <h3 class="text-xl font-semibold text-stone-200 mb-2">2º projeto: Ferramenta de Automação de Licitação (em desenvolvimento)</h3>
                     <p class="text-stone-200">Idealização de um projeto de ferramenta de simplificação do processo de participação em licitações via IA.</p>
                 </article>
-                <article class="bg-emerald-700 rounded-xl shadow p-6">
+                <article class="bloco">
                     <h3 class="text-xl font-semibold text-stone-200 mb-2">3º projeto: Teste de funcionalidade de login</h3>
                     <p class="text-stone-200">Construção de um sistema básico de login envolvendo autenticação de usuário via JWT.</p>
                 </article>
