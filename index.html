@@ -8,10 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         @layer components {
-            .bloco {
+            .bloco_projetos {
                 @apply bg-emerald-700 rounded-xl shadow p-6 transition hover:shadow-lg;
             }
-            .lista {
+            .lista_habilidades {
                 @apply bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm;
             }
         }
@@ -19,7 +19,7 @@
 </head>
 <body class="bg-stone-700 min-h-screen">
     
-    <header class="bg-stone-200 rounded-xl border border-gray-400/80 shadow-xs hover:shadow-lg transition-all duration-500 p-6 mb-6">
+    <header class="bg-stone-200 rounded-xl border border-gray-400 p-6 mb-6">
         <div class="container-header max-w-4xl mx-auto flex items-center justify-between flex-wrap gap-4">
             <h1 class="font-bold text-lg text-emerald-700">Samuel Martins</h1>
             <nav>
@@ -39,34 +39,38 @@
             <img src="imagens/1777142723415.jpg" alt="Foto minha" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-md">
             <div class="container-sobre">
                 <h2 class="text-3xl sm:text-4xl font-bold text-emerald-500 mb-4">Olá, bem vindo ao meu portfólio.</h2>
-                <p class="text-lg text-stone-200">Me chamo Samuel, e atualmente estudo no IFPE - Campus Palmares, onde me torno um melhor profissional a cada dia.</p>
+                <p class="text-lg text-stone-200">
+                    Me chamo Samuel, e atualmente estudo no IFPE - Campus Palmares, onde me torno um melhor profissional 
+                    a cada dia, ao aprender sobre desenvolvimento de páginas web, tanto front como back-end.</p>
             </div>
         </section>
 
         <section id="habilidades" class="max-w-4xl mx-auto px-6 py-12 md:py-16">
                 <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Minhas Habilidades</h2>
                 <ul class="flex flex-wrap gap-2">
-                    <li class="lista">Base forte em HTML5</li>
-                    <li class="lista">Tailwind CSS avançado</li>
-                    <li class="lista">Amplo domínio em Python</li>
-                    <li class="lista">Tomada de decisão assertiva</li>
-                    <li class="lista">Resolução colaborativa de conflitos</li>
+                    <li class="lista_habilidades">HTML5</li>
+                    <li class="lista_habilidades">Tailwind CSS</li>
+                    <li class="lista_habilidades">Python</li>
+                    <li class="lista_habilidades">Docker</li>
+                    <li class="lista_habilidades">Django</li>
+                    <li class="lista_habilidades">Metodologias Ágeis</li>
+                    <li class="lista_habilidades">Foco em resolução de problemas</li>
                 </ul>
         </section>
 
         <section id="projetos" class="max-w-4xl mx-auto px-6 py-12 md:py-16">
             <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Projetos Pessoais</h2>
             <div class="container-projetos grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <article class="bloco">
-                    <h3 class="text-xl font-semibold text-stone-200 mb-2">1º Projeto: Página Web Orquestrada com Docker</h3>
-                    <p class="text-stone-200">Uma demonstração de conhecimento sobre criação de back-end com base em Django e conteinerização via Docker.</p>
+                <article class="bloco_projetos">
+                    <h3 class="text-xl font-semibold text-stone-200 mb-2">Página Web Orquestrada com Docker</h3>
+                    <p class="text-stone-200">Projeto desenvolvido para praticar a criação de uma aplicação web com Django e conteinerização via Docker.</p>
                 </article>
-                <article class="bloco">
-                    <h3 class="text-xl font-semibold text-stone-200 mb-2">2º projeto: Ferramenta de Automação de Licitação (em desenvolvimento)</h3>
-                    <p class="text-stone-200">Idealização de um projeto de ferramenta de simplificação do processo de participação em licitações via IA.</p>
+                <article class="bloco_projetos">
+                    <h3 class="text-xl font-semibold text-stone-200 mb-2">Ferramenta de Automação de Licitação (em desenvolvimento)</h3>
+                    <p class="text-stone-200">Protótipo em estágio inicial de de ferramenta para auxiliar na análise de editais de licitação, com IA.</p>
                 </article>
-                <article class="bloco">
-                    <h3 class="text-xl font-semibold text-stone-200 mb-2">3º projeto: Teste de funcionalidade de login</h3>
+                <article class="bloco_projetos">
+                    <h3 class="text-xl font-semibold text-stone-200 mb-2">Teste de funcionalidade de login</h3>
                     <p class="text-stone-200">Construção de um sistema básico de login envolvendo autenticação de usuário via JWT.</p>
                 </article>
             </div> 
