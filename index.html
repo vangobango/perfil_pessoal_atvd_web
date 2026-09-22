@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Martins</title>
     <meta name="description" content="Portfólio pessoal de Samuel Martins, programador freelancer especializando-se em DevSecOps, entre em contato.">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-stone-700 min-h-screen">
     
-    <header>
-        <div class="container-header">
-            <h1>Samuel Martins</h1>
-            <nav>
+    <header class="bg-white rounded-xl border border-gray-200/80 shadow-xs hover:shadow-lg transition-all duration-300 p-6 mb-6">
+        <div class="container-header max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="font-bold text-lg text-emerald-700">Samuel Martins</h1>
+            <nav class="mt-2">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li class="inline-block mr-4"><a href="#sobre" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Sobre</a></li>
+                    <li class="inline-block mr-4"><a href="#habilidades" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Habilidades</a></li>
+                    <li class="inline-block mr-4"><a href="#projetos" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Projetos</a></li>
+                    <li class="inline-block"><a href="#contato" class="text-neutral-700 hover:text-blue-700 mr-4 font-medium">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,48 +25,51 @@
 
     <main>
 
-        <section id="sobre">
+        <section id="sobre" class="max-w-4xl mx-auto px-6 py-16 flex flex-col sm:flex-row items-center gap-8">
+            <img src="imagens/1777142723415.jpg" alt="Foto minha" class="w-40 h-40 rounded-full object-cover shadow-md"
             <div class="container-sobre">
-                <h2>Olá, e bem vindo ao meu portfólio.</h2>
-                <p>Me chamo Samuel, e atualmente estudo no IFPE - Campus Palmares, onde me torno um melhor profissional a cada dia.</p>
+                <h2 class="text-4xl font-bold text-emerald-500 mb-4">Olá, bem vindo ao meu portfólio.</h2>
+                <p class="text-lg text-stone-200">Me chamo Samuel, e atualmente estudo no IFPE - Campus Palmares, onde me torno um melhor profissional a cada dia.</p>
             </div>
         </section>
 
-        <section id="habilidades">
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li>Base forte em HTML5</li>
-                <li>Tailwind CSS avançado</li>
-                <li>Amplo domínio em Python</li>
-                <li>Tomada de decisão assertiva</li>
-                <li>Resolução colaborativa de conflitos</li>
-            </ul>
+        <section id="habilidades" class="max-w-4xl mx-auto px-6 py-16">
+            <div class="container-habilidades">
+                <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Minhas Habilidades</h2>
+                <ul>
+                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm inline-block mr-2 mb-2">Base forte em HTML5</li>
+                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm inline-block mr-2 mb-2">Tailwind CSS avançado</li>
+                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm inline-block mr-2 mb-2">Amplo domínio em Python</li>
+                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm inline-block mr-2 mb-2">Tomada de decisão assertiva</li>
+                    <li class="bg-emerald-700 text-stone-200 px-3 py-1 rounded-full text-sm inline-block mr-2 mb-2">Resolução colaborativa de conflitos</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="projetos">
+        <section id="projetos" class="max-w-4xl mx-auto px-6 py-16">
             <div class="container-projetos">
-                <h2>Projetos Pessoais</h2>
-                <article>
-                    <h3>1º Projeto: Página Web Orquestrada com Docker</h3>
-                    <p>Uma demonstração de conhecimento sobre criação de back-end com base em Django e conteinerização via Docker.</p>
+                <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Projetos Pessoais</h2>
+                <article class="bg-emerald-700 rounded-xl shadow p-6 mb-6">
+                    <h3 class="text-xl font-semibold text-stone-200 mb-2">1º Projeto: Página Web Orquestrada com Docker</h3>
+                    <p class="text-stone-200">Uma demonstração de conhecimento sobre criação de back-end com base em Django e conteinerização via Docker.</p>
                 </article>
-                <article>
-                    <h3>2º projeto: Desenvolvimento de Ferramenta de Automação de Licitação (em desenvolvimento)</h3>
-                    <p>Idealização de um projeto de ferramenta de simplificação do processo de participação em licitações via IA.</p>
+                <article class="bg-emerald-700 rounded-xl shadow p-6 mb-6">
+                    <h3 class="text-xl font-semibold text-stone-200 mb-2">2º projeto: Desenvolvimento de Ferramenta de Automação de Licitação (em desenvolvimento)</h3>
+                    <p class="text-stone-200">Idealização de um projeto de ferramenta de simplificação do processo de participação em licitações via IA.</p>
                 </article>
             </div> 
         </section>
 
-        <section id="contato">
+        <section id="contato" class="max-w-4xl mx-auto px-6 py-16">
             <div class="container-contato">
-                <h2>Entre em contato</h2>
-                <p>Email: samuelme890@gmail.com</p>
+                <h2 class="text-2xl font-semibold text-emerald-500 mb-6">Entre em contato</h2>
+                <p class="text-stone-300">Email: samuelme890@gmail.com</p>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="text-center text-sm text-emerald-500 py-6 border-t mt-12">
         <p>Página web criada por Samuel Martins.</p>
     </footer>
     
